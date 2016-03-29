@@ -1,10 +1,8 @@
 # ng-dnd
 
-Simple angular drag-and-drop directives that allow *any* json object to be used as the dnd payload.
+Simple angular drag-and-drop directives that allow *any* json object to be used as the dnd payload. Implemented using plain angular and html5.
 
 ![ex gif](example.gif)
-
-Implemented using plain angular and html5.
 
 ## Overview
 There are 2 angular directives in this module: `dndDraggable` and `dndDroppable`, for dnd sources and destinations
@@ -23,11 +21,10 @@ To build, clone the repo, then
 > grunt
 ```
 
-- Once `examples/dnd-all-min.js` has been built, you can optionally run the examples:
+- Once `examples/dnd-all-min.js` has been built, you can optionally run the examples. This will automatically launch a browser with the examples:
 ```
 > grunt serve
 ```
-This will automatically launch a browser with the examples.
 
 ## Usage
 -  add dnd script to html page:
@@ -65,7 +62,6 @@ Both `dndDraggable` and `dndDroppable` require a model. If the model contains ap
 will be called automatically when dnd events occur. These functions are described below.
 
 ### `dndDraggable` model
-(note all these functions relate to the dnd source)
 
 function            | description                             | default
 --------------------| ----------------------------------------|-----------
@@ -78,7 +74,6 @@ function            | description                             | default
 Note: if `dragStart` is invoked then `dragEnd` will also be invoked later (plus possibly `dragDrop` if the drop was successful).
 
 ### `dndDroppable` model
-(note all these functions relate to a dnd target)
 
 function            | description                             | default
 --------------------| ----------------------------------------|-----------
