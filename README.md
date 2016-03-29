@@ -1,3 +1,5 @@
+Simple angular drag-and-drop directives that allow *any* json object to be used as the dnd payload.
+
 ![ex gif](example.gif)
 
 Implemented using plain angular and html5.
@@ -9,7 +11,7 @@ respectively. These are used as attributes, e.g.
 <div dnd-draggable="vm.myDragModel" etc...
 <div dnd-droppable="vm.myDropModel" etc...
 ```
-The models contain callback functions which ar invoked when dnd events occur.
+The models contain callback functions which are invoked when dnd events occur.
 
 ## Building
 To build :
