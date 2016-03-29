@@ -4,18 +4,25 @@ Simple angular directives for drag-and drop.
 Implemented using plain angular and html5.
 
 ## Overview
-There are 2 angular directives in this module: `dndDraggable` and `dndDroppable`, for dnd sources and destinations 
+There are 2 angular directives in this module: `dndDraggable` and `dndDroppable`, for dnd sources and destinations
 respectively. These are used as attributes, e.g.
 ```html
 <div dnd-draggable="vm.myDragModel" etc...
 <div dnd-droppable="vm.myDropModel" etc...
 ```
-The models contain callback functions which are invoked when dnd events occur. *Any* javascript object can be 
+The models contain callback functions which are invoked when dnd events occur. *Any* javascript object can be
 transferred as the dnd payload.
 
 ## Examples
-The example directory contains a couple of test pages. If you clone the repo then these should work out-of-the-box. Just
- double-click on `examples/minimal.html` or `examples/maximal.html`.
+The examples directory contains a couple of test pages. To build the examples:
+- clone the repo
+- from the repo root directory run:
+```html
+> npm install
+> grunt serve
+```
+
+This will launch the exmaples in a browser.
 
 ## Usage
 -  add dnd script to html page:
@@ -49,7 +56,7 @@ You should now be able to:
 The logged messages will guide you in adding functions to your models.
 
 ## Models
-Both `dndDraggable` and `dndDroppable` require a model. If the model contains appropriately named functions then they 
+Both `dndDraggable` and `dndDroppable` require a model. If the model contains appropriately named functions then they
 will be called automatically when dnd events occur. These functions are described below.
 
 ### `dndDraggable` model
@@ -77,4 +84,7 @@ function            | description                             | default
 
 Note: if `dragEnter` is invoked then `dragLeave` will also be invoked later (plus possibly `dragDrop` if the drop was successful).
 
-All functions are optional. If a model is missing a function then a default implementation is used instead. In addition to the functions decribed above, models may also include a boolean `debug` property which, if `true`, will log messages to the console about missing functions. Therefore a minimal implementation for either a dndDraggable or dndDroppable model is `{debug:true}` - this will respond to dnd events with messages to the console.
+#### Minimal implementation
+All model functions are optional. If a model is missing a function then a default (do nothing) implementation is used instead.
+
+In addition to the functions described above, models may also include a boolean `debug` property which, if `true`, will log messages to the console about missing functions. Therefore a minimal implementation for either a dndDraggable or dndDroppable model is `{debug:true}` - this will respond to dnd events with messages to the console.
