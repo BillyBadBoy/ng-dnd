@@ -29,6 +29,7 @@ function AppCtrl($scope) {
                     return item;
                 },
                 isDraggable: function () {
+                    // don't allow boxes to empty
                     return list.length > 1;
                 },
                 dragStart: function (el) {
@@ -57,6 +58,7 @@ function AppCtrl($scope) {
                 list:list,
 
                 isDroppable: function () {
+                    // max of items per box
                     return list.length < 4;
                 },
                 dragEnter: function (el) {
