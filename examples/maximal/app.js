@@ -75,6 +75,7 @@ function AppCtrl($scope) {
         }
     }
 
+    // 7 dnd payloads
     function items() {
         return [
             {text:'R',color:'red'},
