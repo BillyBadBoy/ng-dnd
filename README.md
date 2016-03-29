@@ -1,6 +1,8 @@
 # ng-dnd
 Simple angular directives for drag-and drop, allowing *any* javascript object to be transferred as the dnd payload.
 
+![ex gif](example.gif)
+
 Implemented using plain angular and html5.
 
 ## Overview
