@@ -14,8 +14,7 @@ respectively. These are used as attributes, e.g.
 The models contain callback functions which are invoked when dnd events occur.
 
 ## Building
-To build :
-- clone the repo
+To build, clone the repo, then
 - from the repo root directory run:
 ```
 > npm install
@@ -91,4 +90,4 @@ Note: if `dragEnter` is invoked then `dragLeave` will also be invoked later (plu
 #### Minimal implementation
 All model functions are optional. If a model is missing a function then a default (do nothing) implementation is used instead.
 
-In addition to the functions described above, models may also include a boolean `debug` property which, if `true`, will log messages to the console about missing functions. Therefore a minimal implementation for either a dndDraggable or dndDroppable model is `{debug:true}` - this will respond to dnd events with messages to the console.
+In addition to the functions described above, models may also include a boolean `debug` property which, if `true`, will log messages to the console about missing functions. Therefore a minimal implementation for either a `dndDraggable` or `dndDroppable` model is `{debug:true}` - this will respond to dnd events with messages to the console.
