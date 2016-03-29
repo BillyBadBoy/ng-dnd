@@ -1,6 +1,3 @@
-# ng-dnd
-Simple angular directives for drag-and drop, allowing *any* javascript object to be transferred as the dnd payload.
-
 ![ex gif](example.gif)
 
 Implemented using plain angular and html5.
@@ -12,18 +9,22 @@ respectively. These are used as attributes, e.g.
 <div dnd-draggable="vm.myDragModel" etc...
 <div dnd-droppable="vm.myDropModel" etc...
 ```
-The models contain callback functions which are invoked when dnd events occur.
+The models contain callback functions which ar invoked when dnd events occur.
 
-## Examples
-The examples directory contains a couple of test pages. To build the examples:
+## Building
+To build :
 - clone the repo
 - from the repo root directory run:
-```html
+```
 > npm install
-> grunt serve
+> grunt
 ```
 
-This will launch the examples in a browser.
+- Once `examples/dnd-all-min.js` has been built, you can optionally run the examples:
+```
+> grunt serve
+```
+This will automatically launch a browser with the examples.
 
 ## Usage
 -  add dnd script to html page:
