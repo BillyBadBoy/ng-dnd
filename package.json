@@ -1,0 +1,16 @@
+{
+  "name": "dnd",
+  "version": "1.0.0",
+  "description": "angular dnd",
+  "main": "gruntfile.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt":                 "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-uglify":  "*",
+    "grunt-contrib-jshint":  "*"
+  }
+}

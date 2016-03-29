@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <style>
+        #box  {float:left;width:86px;height:84px;border:solid;margin:10px;background:white;}
+        #item {float:left;width:30px;height:30px;border:solid;margin:3px;;background:white;}
+    </style>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+    <script data-require="angular.js@1.4.3" data-semver="1.4.3" src="https://code.angularjs.org/1.4.3/angular.js"></script>
+    <script src="../ios-dnd-min.js"></script>
+    <script src="../dnd-all-min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-controller="AppCtrl as vm" style="background:lightyellow">
+<h1>drag-n-drop demo</h1>
+<div><b>R</b>ed, <b>O</b>range, <b>Y</b>ellow, <b>G</b>reen, <b>B</b>lue, <b>I</b>ndigo, <b>V</b>iolet</div>
+
+<div id="box" dnd-droppable="vm.dropModel(2, vm.list_2)">
+    <div id="item" dnd-draggable="vm.dragModel(vm.list_2, i)" ng-repeat="i in vm.list_2">&nbsp;{{i.text}}</div>
+</div>
+
+<div id="box" dnd-droppable="vm.dropModel(1, vm.list_1)">
+    <div id="item" dnd-draggable="vm.dragModel(vm.list_1, i)" ng-repeat="i in vm.list_1" ng-style="{background:'{{i.color}}'}"></div>
+</div>
+
+<div id="box" dnd-droppable="vm.dropModel(3, vm.list_3)">
+    <div id="item" dnd-draggable="vm.dragModel(vm.list_3, i)" ng-repeat="i in vm.list_3">&nbsp;{{i.text}}</div>
+</div>
+
+<ul style="clear:left;">
+    <li>Cannot drag last small box in a big box
+    <li>Cannot drop on a full big box
+    <li>Custom data transfer e.g. {text:'R',color:'red'}
+    <li>Drag and drop marked with style changes
+</ul>
+
+</body>
+</html>

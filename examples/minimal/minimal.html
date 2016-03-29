@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <style>
+        h1      {width:500px;}
+        #source {float:left;width:19px;height:19px;border:solid;background-color:pink;margin:19px;}
+        #target {float:left;width:51px;height:51px;border:solid;background-color:lightcyan;}
+    </style>
+    <meta charset="UTF-8">
+    <script data-require="angular.js@1.4.3" data-semver="1.4.3" src="https://code.angularjs.org/1.4.3/angular.js"></script>
+    <script src="../ios-dnd-min.js"></script>
+    <script src="../dnd-all-min.js"></script>
+    <script>angular.module('app', ['dnd']);</script>
+</head>
+<body>
+    <h1>Open browser console and drag little square into big square.</h1>
+    <h4>Source and target have empty models with debugging enabled.</h4>
+
+    <div id="source" dnd-draggable="{debug:true}"></div>
+    <div id="target" dnd-droppable="{debug:true}"></div>
+</body>
+</html>
