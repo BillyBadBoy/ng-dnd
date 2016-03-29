@@ -1,5 +1,5 @@
-# dnd
-Simple angular directives for drag-and drop.
+# ng-dnd
+Simple angular directives for drag-and drop, allowing *any* javascript object to be transferred as the dnd payload.
 
 Implemented using plain angular and html5.
 
@@ -10,8 +10,7 @@ respectively. These are used as attributes, e.g.
 <div dnd-draggable="vm.myDragModel" etc...
 <div dnd-droppable="vm.myDropModel" etc...
 ```
-The models contain callback functions which are invoked when dnd events occur. *Any* javascript object can be
-transferred as the dnd payload.
+The models contain callback functions which are invoked when dnd events occur.
 
 ## Examples
 The examples directory contains a couple of test pages. To build the examples:
@@ -29,7 +28,7 @@ This will launch the examples in a browser.
 ```html
         <script src="foo/dnd-all-min.js"></script>
 ```
-- __optional:__ if support for touch devices is required add this script ([based on this]
+- __optional:__ if support for touch devices is required add this 3rd party script ([based on this]
 (https://github.com/timruffles/ios-html5-drag-drop-shim)) to html page:
 ````html
         <script src="bar/ios-drag-drop.js"></script>

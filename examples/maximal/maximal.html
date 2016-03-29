@@ -15,7 +15,7 @@
 </head>
 <body ng-controller="AppCtrl as vm" style="background:lightyellow">
 <h1>drag-n-drop demo</h1>
-<div><b>R</b>ed, <b>O</b>range, <b>Y</b>ellow, <b>G</b>reen, <b>B</b>lue, <b>I</b>ndigo, <b>V</b>iolet</div>
+<div>&nbsp;&nbsp;<b>R</b>ed, <b>O</b>range, <b>Y</b>ellow, <b>G</b>reen, <b>B</b>lue, <b>I</b>ndigo, <b>V</b>iolet</div>
 
 <div id="box" dnd-droppable="vm.dropModel(2, vm.list_2)">
     <div id="item" dnd-draggable="vm.dragModel(vm.list_2, i)" ng-repeat="i in vm.list_2">&nbsp;{{i.text}}</div>
