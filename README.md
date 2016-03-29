@@ -22,7 +22,7 @@ The examples directory contains a couple of test pages. To build the examples:
 > grunt serve
 ```
 
-This will launch the exmaples in a browser.
+This will launch the examples in a browser.
 
 ## Usage
 -  add dnd script to html page:
