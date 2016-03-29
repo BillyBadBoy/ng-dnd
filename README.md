@@ -1,3 +1,5 @@
+# ng-dnd
+
 Simple angular drag-and-drop directives that allow *any* json object to be used as the dnd payload.
 
 ![ex gif](example.gif)
