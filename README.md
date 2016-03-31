@@ -19,10 +19,15 @@ To build, clone the repo, then from the repo root directory run:
 > npm install
 > grunt
 ```
- Once `examples/dnd-all-min.js` has been built, you can optionally run the examples. This will automatically launch a browser with the examples:
+
+## Examples
+Once `examples/dnd-all-min.js` has been built, you can run the examples by running the following from the repo root directory:
 ```
 > grunt serve
 ```
+There are 2 examples. 
+- _minimal_ uses empty models with debug enabled. If you open the browser console you can see when the model functions are invoked. 
+- _maximal_ has models with implementations for all the model functions. It also demonstrates an arbitrary json object being used as the drag-and-drop payload.
 
 ## Usage
 -  add dnd script to html page:
@@ -53,7 +58,7 @@ You should now be able to:
 1. open the browser console
 1. view logged drag and drop messages
 
-The logged messages will guide you in adding functions to your models.
+You can now incrementally add model functions to your models. The details of the functions available are given below.
 
 ## Models
 Both `dndDraggable` and `dndDroppable` require a model. If the model contains appropriately named functions then they
