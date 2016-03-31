@@ -14,7 +14,7 @@ respectively. These are used as attributes, e.g.
 The models contain callback functions which are invoked when dnd events occur.
 
 ## Building
-To build, clone the repo, then from the repo root directory run:
+To build (assuming you have `npm` installed), clone the repo, then from the repo root directory run:
 ```
 > npm install
 > grunt
