@@ -3,9 +3,6 @@ module.exports = function(grunt) {
     // Project configuration.
     grunt.initConfig({
 	jshint: {
-		options: {
-        		jshintrc: '.jshintrc' 
-    		},
 		dndFiles: ['src/*.js']
 	},        
 	uglify: {
