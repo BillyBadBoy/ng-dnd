@@ -26,21 +26,25 @@ function AppCtrl($scope) {
                 list:list,
 
                 data: function () {
+                    // dnd payload e.g. {text:'R',color:'red'}
                     return item;
                 },
                 isDraggable: function () {
-                    // don't allow boxes to empty
+                    // don't allow box to become empty
                     return list.length > 1;
                 },
                 dragStart: function (el) {
+                    // give dagged item dotted border
                     el.css('border-style', 'dotted');
                 },
                 dragDrop: function (data) {
+                    // remove dropped item from source list
                     list.splice(list.indexOf(data), 1);
                     delete dragModels[data.text];
                     $scope.$apply();
                 },
                 dragEnd: function (el) {
+                    // retore dragged items solid border
                     el.css('border-style', 'solid');
                 }
             };
@@ -58,17 +62,20 @@ function AppCtrl($scope) {
                 list:list,
 
                 isDroppable: function () {
-                    // max of items per box
+                    // don't allow drop if box is full
                     return list.length < 4;
                 },
                 dragEnter: function (el) {
+                    // indicate drop target with gray background
                     el.css('background-color', 'lightgray');
                 },
                 dragDrop: function (data) {
+                    // add dropped item to destination list
                     list.push(data);
                     $scope.$apply();
                 },
                 dragLeave: function (el) {
+                    // restore drop target white background
                     el.css('background-color', 'white');
                 }
             };
