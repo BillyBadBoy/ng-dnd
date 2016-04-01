@@ -14,7 +14,7 @@ respectively. These are used as attributes, e.g.
 The models contain callback functions which are invoked when dnd events occur.
 
 ## Building
-To build (assuming you have `npm` installed), clone the repo, then from the repo root directory run:
+To build (assuming you have `npm` properly installed), clone the repo, then from the repo root directory run:
 ```
 > npm install
 > grunt
@@ -25,9 +25,9 @@ Once `examples/dnd-all-min.js` has been built, you can run the examples by runni
 ```
 > grunt serve
 ```
-There are 2 examples.
-- _minimal_ uses empty models with debug enabled. If you open the browser console you can see when the model functions are invoked.
-- _maximal_ has models with implementations for all the model functions. It also demonstrates an arbitrary json object being used as the drag-and-drop payload.
+There are 2 examples. 
+- _minimal_: uses empty models with debug enabled. If you open the browser console you can see when the model functions are invoked. 
+- _maximal_: has models with implementations for all the model functions. It also demonstrates an arbitrary json object being used as the drag-and-drop payload.
 
 ## Usage
 -  add dnd script to html page:

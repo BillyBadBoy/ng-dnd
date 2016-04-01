@@ -44,7 +44,7 @@ function AppCtrl($scope) {
                     $scope.$apply();
                 },
                 dragEnd: function (el) {
-                    // retore dragged items solid border
+                    // retore dragged item's solid border
                     el.css('border-style', 'solid');
                 }
             };
@@ -75,7 +75,7 @@ function AppCtrl($scope) {
                     $scope.$apply();
                 },
                 dragLeave: function (el) {
-                    // restore drop target white background
+                    // restore drop target's white background
                     el.css('background-color', 'white');
                 }
             };
@@ -87,13 +87,13 @@ function AppCtrl($scope) {
     // 7 dnd payloads
     function items() {
         return [
-            {text:'R',color:'red'},
-            {text:'O',color:'orange'},
-            {text:'Y',color:'yellow'},
-            {text:'G',color:'lightgreen'},
-            {text:'B',color:'lightblue'},
-            {text:'I',color:'indigo'},
-            {text:'V',color:'violet'}
+            {text:'R', color:'red'},
+            {text:'O', color:'orange'},
+            {text:'Y', color:'yellow'},
+            {text:'G', color:'lightgreen'},
+            {text:'B', color:'lightblue'},
+            {text:'I', color:'indigo'},
+            {text:'V', color:'violet'}
         ];
     }
 }
