@@ -26,8 +26,8 @@ Once `examples/dnd-all-min.js` has been built, you can run the examples by runni
 > grunt serve
 ```
 There are 2 examples. 
-- _minimal_ uses empty models with debug enabled. If you open the browser console you can see when the model functions are invoked. 
-- _maximal_ has models with implementations for all the model functions. It also demonstrates an arbitrary json object being used as the drag-and-drop payload.
+- _minimal_: uses empty models with debug enabled. If you open the browser console you can see when the model functions are invoked. 
+- _maximal_: has models with implementations for all the model functions. It also demonstrates an arbitrary json object being used as the drag-and-drop payload.
 
 ## Usage
 -  add dnd script to html page:
