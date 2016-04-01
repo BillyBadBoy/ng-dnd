@@ -87,7 +87,7 @@ function            | description                             | default
 
 Note: if `dragEnter` is invoked then `dragLeave` will also be invoked later (plus possibly `dragDrop` if the drop was successful).
 
-#### Minimal implementation
+##### Minimal implementation
 All model functions are optional. If a model is missing a function then a default (do nothing) implementation is used instead.
 
 In addition to the functions described above, models may also include a boolean `debug` property which, if `true`, will log messages to the console about missing functions. Therefore a minimal implementation for either a `dndDraggable` or `dndDroppable` model is `{debug:true}` - this will respond to dnd events with messages to the console.
