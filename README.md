@@ -49,8 +49,8 @@ There are 2 examples.
 ```
 - add initially empty client models by adding the following to your controller:
 ```javascript
-vm.myDragModel = {debug:true};
-vm.myDropModel = {debug:true};
+        vm.myDragModel = {debug:true};
+        vm.myDropModel = {debug:true};
 ```
 You should now be able to:
 
