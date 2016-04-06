@@ -17,7 +17,7 @@ function AppCtrl($scope) {
     var dragModels = {};
     var dropModels = {};
 
-    //lazily build drag models for items
+    //lazily build drag models for 7 small color squares
     function dragModel(list, item) {
         if (dragModels.hasOwnProperty(item.text)) {
             return dragModels[item.text];
@@ -53,7 +53,7 @@ function AppCtrl($scope) {
         }
     }
 
-    //lazily build drop models for items
+    //lazily build drop models the 3 big squares
     function dropModel(i, list) {
         if (dropModels.hasOwnProperty(i)) {
             return dropModels[i];
