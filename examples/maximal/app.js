@@ -30,7 +30,7 @@ function AppCtrl($scope) {
                     return item;
                 },
                 isDraggable: function () {
-                    // don't allow box to become empty
+                    // don't allow big box to become empty
                     return list.length > 1;
                 },
                 dragStart: function (el) {
@@ -44,7 +44,7 @@ function AppCtrl($scope) {
                     $scope.$apply();
                 },
                 dragEnd: function (el) {
-                    // retore dragged item's solid border
+                    // restore dragged item's solid border
                     el.css('border-style', 'solid');
                 }
             };
@@ -62,7 +62,7 @@ function AppCtrl($scope) {
                 list:list,
 
                 isDroppable: function () {
-                    // don't allow drop if box is full
+                    // don't allow drop if big box is full
                     return list.length < 4;
                 },
                 dragEnter: function (el) {
