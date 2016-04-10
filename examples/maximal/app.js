@@ -48,12 +48,12 @@ function AppCtrl($scope) {
                     el.css('border-style', 'solid');
                 }
             };
-            dragModels[item.text] = model;
+            dragModels[item.text] = model;
             return model;
         }
     }
 
-    //lazily build drop models the 3 big squares
+    //lazily build drop models for 3 big squares
     function dropModel(i, list) {
         if (dropModels.hasOwnProperty(i)) {
             return dropModels[i];
