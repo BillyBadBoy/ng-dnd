@@ -74,7 +74,7 @@ function dndDraggable($log, dndData) {
         // location of dataTransfer depends on whether jquery is present
         function setDataTransfer(event) {
             if ('dataTransfer' in event) {
-                event.dataTransfer.setData('"text', '');
+                event.dataTransfer.setData('text', '');
             } else if (('originalEvent' in event) &&
                 ('dataTransfer' in event.originalEvent)) {
                 event.originalEvent.dataTransfer.setData('text','');
