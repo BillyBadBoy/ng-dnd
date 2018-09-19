@@ -8,8 +8,8 @@ Simple angular drag-and-drop directives that allow *any* json object to be used 
 There are 2 angular directives in this module: `dndDraggable` and `dndDroppable`, for dnd sources and destinations
 respectively. These are used as attributes, e.g.
 ```html
-<div dnd-draggable="vm.myDragModel" etc...
-<div dnd-droppable="vm.myDropModel" etc...
+<div dnd-draggable="vm.myDragModel" etc...></div>
+<div dnd-droppable="vm.myDropModel" etc...></div>
 ```
 The models contain callback functions which are invoked when dnd events occur.
 
